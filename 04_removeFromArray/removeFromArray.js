@@ -1,18 +1,18 @@
-const removeFromArray = function(array, ...args) {//my new Array + random other arguments
+const removeFromArray = function(array, ...args) {
 
-const newArray = []//1. create a new variable for my array
+let newArray = [];
 
-array.forEach((item) => {//2. check each item in the array
+array.forEach((item) => {
 
-    if (!args.includes(item)){//3. if the item is NOT part of the function arguments
-        newArray.push(item);//4. add the item to the existing newArray
-    }
+    if (!args.includes(item))
+        {
+        newArray.push(item);
+        }
 }
+
 )
 
-return newArray; //5. and finally return the value of the updated newArray
-
-
+return newArray;
 };
 
 // Do not edit below this line
