@@ -1,16 +1,13 @@
-const convertToCelsius = function() {
-
-  /*Receive a variable in Farenheit. Take the number and apply the formula(x − 32) × (5/9). Round this number to one decimal and return it + "°C".*/
+const convertToCelsius = function(degreeF) {
+  let result = (degreeF - 32) * (5 / 9);
+  return parseFloat(result.toFixed(1));//return the result to a fixed string with 1 decimal but then parse it into a Float so the test receives the correct type
 };
 
-const convertToFahrenheit = function() {
-
-  /*Receive a variable in Celsius. Take the number and apply the formula x × ⁠
-(9/5) + 32. Round this number to one decimal and return it + "°F". */
-
+const convertToFahrenheit = function(degreeC) {
+  let result = (degreeC * (9 / 5)) + 32;
+  return parseFloat(result.toFixed(1));
 };
 
-// Do not edit below this line
 module.exports = {
   convertToCelsius,
   convertToFahrenheit
